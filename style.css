@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+a{
+	color: inherit;
+}
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 28px;
+
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{
+	vertical-align: top;
+	max-width: 100%;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*---------обнуление-----------*/
+
+
+/* Переменные */
+:root{
+    /* color */
+    --LightCyan: rgb(206, 227, 233);
+    --NeonGreen: rgb(82, 255, 168);
+
+
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+
+    /* typography */
+    --family:'Manrope', sans-serif;
+    --font-size-base: 1rem;
+
+    --weight-bold: 800;
+
+    /* border */
+    --radius:0.5rem;
+    --radius-full:50%;
+}
+
+
+
+.wrapper{
+    background-color:var(--DarkBlue);
+    font-family: var(--family);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.advice{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 330px;
+    min-height: 330px;
+    background-color:var(--DarkGrayishBlue);
+    border-radius: var(--radius);
+    color: var(--NeonGreen);
+    font-size: 0.5rem;
+    padding: 1rem;
+}
+.advice__id{
+    font-size: 0.4rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 130%;
+    text-transform: uppercase;
+
+}
+
+.advice__text{
+    min-width:250px;
+    /* min-height: 200px; */
+    color: var(--LightCyan);
+    font-size: 0.7rem;
+    margin: 1rem auto;
+    padding: 0.5rem;
+}
+
+.decore{
+    margin-bottom: 1rem;
+}
+
+.btn{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color:var(--NeonGreen);
+    border-radius: var(--radius-full);
+    bottom: -30px;
+
+}
+
+.btn:hover{
+   box-shadow: 0 0 18px 1em #b3f4aa55;
+}
